@@ -3,11 +3,11 @@ void setup() {
   size(800, 600);
   background(#ffffff);
 
-  int R = 3;
-  int C = 4;
+  int R = 12;
+  int C = 8;
   int N = R*C;
 
-  int s = 40;
+  int s = 22;
   int x0 = s+10;
   int y0 = s+10;
 
@@ -30,9 +30,16 @@ void setup() {
 
   var z = init_array(N,-1);
 
+  $("#patchtext").append("note: patch colors listed from inside out<br><br>\n");
+
   int n;
   var neighbors = [];
   for (int r=0; r<R; r++) {
+
+    $("#patchtext").append("row " + str(r+1) + "<br>\n");
+
+    var patch_colors = [];
+    
     for (int c=0; c<C; c++) {
       n = rc2ndx(r,c,C);
 
@@ -51,7 +58,17 @@ void setup() {
         y = y0 + 2*s*r;
 
         draw_hexagon(x, y, s*Math.pow(0.7,i), colors[zi]);
+
+        patch_colors.push(color_names[zi]);
+
       }
+
+      $("#patchtext").append("&nbsp;&nbsp;patch " + str(c+1) + ": ");
+      patch_colors.reverse();
+      for (int i=0; i<4; i++)
+        $("#patchtext").append(patch_colors[i] + " ");
+
+      $("#patchtext").append("<br>\n");
     }
   }
 }
