@@ -1,0 +1,16 @@
+randquilt is a hack to generate random quilt patch colors,
+necessitated by @amandahofman's latest project.
+
+it lays out an R-by-C grid of multicolored hexagonal patches. each
+patch is made of concentric hexagons, and patch colors respect the
+following constraints:
+
+  * no two neighboring patches have the same outer patch color
+  * no color is repeated within a patch
+
+quilt.m will randomly sample colors subject to these constraints and
+produce a pdf (quilt.pdf) and text (quilt.txt) representation of the
+quilt.
+
+randquilt is currently coded in matlab, although i'd like to convert
+it to python+scipy at some point.
