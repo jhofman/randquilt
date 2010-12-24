@@ -11,6 +11,8 @@ for r=1:R
   % (shift odd rows over 1)
   x0 = mod(r,2);
 
+  fprintf(fid,'row %d\n',r);
+
   for c=1:C
     % patch number
     n = rc2ndx(r,c,C);
