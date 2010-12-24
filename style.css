@@ -8,11 +8,9 @@
 	voice-family:inherit;
 	width: 46%;
 	}
-html>body #content {
-	width: 46%; /* ie5win fudge ends */
-	}
+
 #content2 {
-	float: left; /* Opera5.02 will show a space at right when there is no scroll bar */
+	float: left;
 	padding: 10px 2% 10px 2%;
 	margin: 0px;
 	border: 0px;
@@ -21,12 +19,3 @@ html>body #content {
 	voice-family:inherit;
 	width: 46%;
 	}
-html>body #content2 {
-	width: 46%; /* ie5win fudge ends */
-	}
-pre {
-	font-size: 12px;
-	line-height: 22px;
-	margin-top: 20px;
-	margin-bottom: 10px; 
-	}	
