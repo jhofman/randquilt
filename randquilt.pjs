@@ -30,7 +30,7 @@ void setup() {
 
   var z = init_array(N,-1);
 
-  $("#patchtext").append("note: patch colors listed from inside out<br><br>\n");
+  $("#patchtext").append("<p>patch colors, listed from inside out:</p>");
 
   int n;
   var neighbors = [];
