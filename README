@@ -11,3 +11,4 @@ following constraints:
 randquilt.html will randomly sample colors subject to these
 constraints and produce a image and text representation of the quilt.
 
+a live version is available at: http://jakehofman.com/randquilt/
