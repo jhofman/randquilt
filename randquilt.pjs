@@ -1,0 +1,143 @@
+
+void setup() {
+  size(800, 600);
+  background(#ffffff);
+
+  int R = 3;
+  int C = 4;
+  int N = R*C;
+
+  int s = 40;
+  int x0 = s+10;
+  int y0 = s+10;
+
+  color_dict = {'yellow' : #ffff00,  
+                'brown'  : #884400,  
+                'blue'   : #004488,  
+                'green'  : #004444,  
+                'pink'   : #ff0044,  
+                'orange' : #ff8800}; 
+  var color_names = [];
+  var colors = [];
+  int c=0;
+  for (var k in color_dict) {
+    color_names[c] = k;
+    colors[c] = color_dict[k];
+    c+=1;
+  }
+
+  int ncolors = colors.length;
+
+  var z = init_array(N,-1);
+
+  int n;
+  var neighbors = [];
+  for (int r=0; r<R; r++) {
+    for (int c=0; c<C; c++) {
+      n = rc2ndx(r,c,C);
+
+      for (int i=0; i<4; i++) {
+        if (i==0) {
+          zi = random_color(ncolors, get_neighbor_colors(r,c,R,C,z));
+          z[n] = zi;
+
+          var zs_used = [zi];
+        } else {
+          zi = random_color(ncolors, zs_used);
+	  zs_used.push(zi);
+        }
+
+        x = x0 + s*!(r % 2) + 2*s*c;
+        y = y0 + 2*s*r;
+
+        draw_hexagon(x, y, s*Math.pow(0.7,i), colors[zi]);
+      }
+    }
+  }
+}
+
+void draw() {
+  return;
+}
+
+
+int rc2ndx(r,c,C) {
+  return C*r + c;
+}
+
+void draw_hexagon(x0,y0,r,c) {
+  fill(c);
+  beginShape(POLYGON);
+  for (float t=0; t<2*PI; t+=PI/3) {
+    vertex(x0 + r*sin(t), y0 + r*cos(t));
+  }
+  endShape();
+}
+
+void init_array(N,x0) {
+  var x = new Array();
+  for (int n=0; n<N; n++)
+    x[n]=x0;
+  return x;
+}
+
+void get_neighbor_colors(r,c,R,C,z) {
+
+  var neighbors = [];
+
+  n = rc2ndx(r,c,C);
+
+  // east
+  if (c < C-1)
+    neighbors.push(n + 1);
+
+  // west
+  if (c > 0)
+    neighbors.push(n - 1);
+
+  if (r < R-1) {
+    // south
+    neighbors.push(rc2ndx(r+1,c,C));
+
+    // southeast (even row, not end)
+    if ( !(r % 2) && (c < C-1) )
+      neighbors.push(rc2ndx(r+1,c+1,C));
+
+    // southwest (odd row, not beginning)
+    if ( (r % 2) && (c > 0))
+      neighbors.push(rc2ndx(r+1,c-1,C));
+  }
+
+
+  if (r > 0) {
+    // north
+    neighbors.push(rc2ndx(r-1,c,C));
+
+    // northeast (even row, not end)
+    if ( !(r % 2) && (c < C-1) )
+      neighbors.push(rc2ndx(r-1,c+1,C));
+
+    // northwest (odd row, not beginning)
+    if ( (r % 2) && (c > 0))
+      neighbors.push(rc2ndx(r-1,c-1,C));
+  }
+
+  var colors = [];
+  for (int i=0; i < neighbors.length; i++)
+    colors.push(z[neighbors[i]]);
+
+  return colors;
+}
+
+
+void random_color(ncol, used) {
+  var all = [];
+  for (int i=0; i<ncol; i++)
+    all[i]=i;
+
+  diff = all.filter(function(x) { return used.indexOf(x) < 0 });
+
+  ndx = Math.floor(Math.random() * diff.length);
+
+  return diff[ndx];
+}

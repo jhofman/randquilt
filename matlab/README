@@ -8,6 +8,9 @@ following constraints:
   * no two neighboring patches have the same outer patch color
   * no color is repeated within a patch
 
-randquilt.html will randomly sample colors subject to these
-constraints and produce a image and text representation of the quilt.
+quilt.m will randomly sample colors subject to these constraints and
+produce a pdf (quilt.pdf) and text (quilt.txt) representation of the
+quilt.
 
+randquilt is currently coded in matlab, although i'd like to convert
+it to python+scipy at some point.

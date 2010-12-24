@@ -1,0 +1,120 @@
+row 1
+	patch 1: blue green brown pink 
+	patch 2: brown orange blue yellow 
+	patch 3: pink yellow green brown 
+	patch 4: green brown blue orange 
+	patch 5: pink orange yellow blue 
+	patch 6: brown blue pink green 
+	patch 7: green brown pink blue 
+	patch 8: brown blue orange pink 
+	patch 9: blue pink brown yellow 
+row 2
+	patch 1: orange yellow blue brown 
+	patch 2: pink brown yellow blue 
+	patch 3: green brown blue orange 
+	patch 4: pink orange yellow green 
+	patch 5: yellow orange green brown 
+	patch 6: green pink brown yellow 
+	patch 7: blue green brown pink 
+	patch 8: pink orange green brown 
+	patch 9: pink green orange blue 
+row 3
+	patch 1: green blue pink orange 
+	patch 2: orange pink brown green 
+	patch 3: yellow orange pink brown 
+	patch 4: orange brown yellow blue 
+	patch 5: brown yellow orange green 
+	patch 6: pink yellow blue orange 
+	patch 7: orange blue green yellow 
+	patch 8: green blue orange pink 
+	patch 9: blue brown yellow green 
+row 4
+	patch 1: brown blue yellow green 
+	patch 2: pink yellow brown blue 
+	patch 3: brown orange pink yellow 
+	patch 4: brown blue orange pink 
+	patch 5: brown blue green yellow 
+	patch 6: orange blue yellow pink 
+	patch 7: blue brown pink green 
+	patch 8: brown yellow orange blue 
+	patch 9: brown yellow green orange 
+row 5
+	patch 1: yellow green blue brown 
+	patch 2: pink orange blue green 
+	patch 3: green yellow brown blue 
+	patch 4: yellow blue brown orange 
+	patch 5: yellow green orange blue 
+	patch 6: brown blue green orange 
+	patch 7: green yellow brown pink 
+	patch 8: pink yellow orange green 
+	patch 9: green orange blue brown 
+row 6
+	patch 1: yellow green pink orange 
+	patch 2: blue brown orange pink 
+	patch 3: yellow blue pink orange 
+	patch 4: blue yellow brown pink 
+	patch 5: pink orange blue brown 
+	patch 6: yellow pink orange green 
+	patch 7: orange pink blue yellow 
+	patch 8: brown blue yellow orange 
+	patch 9: brown green yellow pink 
+row 7
+	patch 1: green orange pink blue 
+	patch 2: orange yellow blue brown 
+	patch 3: green orange blue yellow 
+	patch 4: yellow blue brown orange 
+	patch 5: orange brown green yellow 
+	patch 6: green blue orange brown 
+	patch 7: blue yellow orange green 
+	patch 8: yellow green brown blue 
+	patch 9: blue green orange brown 
+row 8
+	patch 1: orange brown green yellow 
+	patch 2: pink brown yellow orange 
+	patch 3: yellow orange green blue 
+	patch 4: brown green blue pink 
+	patch 5: green blue yellow brown 
+	patch 6: pink brown yellow orange 
+	patch 7: blue pink brown yellow 
+	patch 8: blue orange green brown 
+	patch 9: yellow brown blue pink 
+row 9
+	patch 1: orange green pink brown 
+	patch 2: brown green yellow pink 
+	patch 3: yellow blue brown green 
+	patch 4: orange green brown blue 
+	patch 5: green brown yellow pink 
+	patch 6: brown green pink blue 
+	patch 7: brown yellow pink green 
+	patch 8: brown pink green yellow 
+	patch 9: blue pink green brown 
+row 10
+	patch 1: green blue pink orange 
+	patch 2: orange yellow brown green 
+	patch 3: brown blue pink orange 
+	patch 4: orange pink blue brown 
+	patch 5: pink blue orange green 
+	patch 6: pink brown yellow orange 
+	patch 7: orange yellow blue brown 
+	patch 8: brown blue green pink 
+	patch 9: pink green brown orange 
+row 11
+	patch 1: green orange pink yellow 
+	patch 2: green brown pink blue 
+	patch 3: orange brown pink yellow 
+	patch 4: orange brown pink blue 
+	patch 5: pink green blue yellow 
+	patch 6: yellow orange green blue 
+	patch 7: blue pink yellow orange 
+	patch 8: pink blue yellow green 
+	patch 9: green yellow orange blue 
+row 12
+	patch 1: pink brown green orange 
+	patch 2: brown blue yellow pink 
+	patch 3: green pink brown orange 
+	patch 4: yellow blue orange green 
+	patch 5: pink blue green orange 
+	patch 6: green brown orange pink 
+	patch 7: pink blue brown green 
+	patch 8: blue yellow brown pink 
+	patch 9: yellow pink green orange 
